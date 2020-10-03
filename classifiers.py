@@ -26,7 +26,7 @@ import matplotlib.pyplot as plt
 def configuration():
 	# config_file = open("./config.yaml")
 	# config = yaml.load(config_file, Loader = yaml.FullLoader)
-	config = confuse.Configuration('/home/abishek/Financial_data',__name__)
+	config = confuse.Configuration(os.getcwd(),__name__)
 
 	return config
 
